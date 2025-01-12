@@ -175,4 +175,4 @@ LABEL \
 	author="jya0 <jyao@student.42abudhabi.ae>" \
 	maintainer="jya0 <jyao@student.42abudhabi.ae>" \
 	version="1.1" \
-	description="This Dockerfile builds a dev environment to write and test OCAML code."
+	description="This Dockerfile builds a dev environment to write and test python3.10 code."
