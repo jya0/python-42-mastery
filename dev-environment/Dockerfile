@@ -165,10 +165,12 @@ RUN set -eux; \
 
 	
 ### Installation of additional Python Libraries
-# COPY ./requirements.txt /tmp/requirements.txt
-# RUN <<EOF
-# pip install -y -r /tmp/requirements.txt
-# EOF
+###### MAKE SURE to pip freeze > requirements.txt inside container for if you
+###### want to have all libraries in the container environment.
+COPY ./requirements.txt /tmp/requirements.txt
+RUN <<EOF
+pip install -r /tmp/requirements.txt
+EOF
 
 ### Metadata about the image specified here in the Dockerfile
 LABEL \
